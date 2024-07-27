@@ -1,5 +1,5 @@
 import React from "react";
-import projects from "../../public/Projects.json";
+import projects from "../Projects.json";
 console.log(projects);
 function Projects() {
   return (
@@ -16,7 +16,7 @@ function Projects() {
             >
               <img
                 className="w-[400px] h-[300px]"
-                src={`public/ProjectFotos/${project.img}`}
+                src={`/ProjectFotos/${project.img}`}
                 alt=""
               />
               <div className=" w-[422px] flex flex-col ">
