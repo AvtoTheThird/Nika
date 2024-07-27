@@ -16,7 +16,7 @@ function Projects() {
             >
               <img
                 className="w-[400px] h-[300px]"
-                src={`/ProjectFotos/${project.img}`}
+                src={`ProjectFotos/${project.img}`}
                 alt=""
               />
               <div className=" w-[422px] flex flex-col ">
