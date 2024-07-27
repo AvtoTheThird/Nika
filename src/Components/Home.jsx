@@ -38,7 +38,7 @@ function Home() {
               </u>
             </div>
             <a
-              href="/Document 3.pdf"
+              href="/Nika/Document 3.pdf"
               className="flex text-n_black justify-center items-center w-[183px] bg-n_green rounded-md"
               target="_blank"
             >
