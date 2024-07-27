@@ -30,11 +30,20 @@ function Home() {
                 reach me at
               </span>
               <br />
-              <u>nikapataridze15@gmail.com</u>
+
+              <u>
+                <a href="mailto:nikapataridze15@gmail.com">
+                  nikapataridze15@gmail.com
+                </a>
+              </u>
             </div>
-            <button className="flex text-n_black justify-center items-center w-[183px] bg-n_green rounded-md">
+            <a
+              href="/Document 3.pdf"
+              className="flex text-n_black justify-center items-center w-[183px] bg-n_green rounded-md"
+              target="_blank"
+            >
               View my resume <img src=" Logos\arrow_outward.png" alt="" />
-            </button>
+            </a>
           </div>
         </div>
       </div>

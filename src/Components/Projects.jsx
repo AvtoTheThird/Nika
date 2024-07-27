@@ -1,5 +1,7 @@
 import React from "react";
 import projects from "../Projects.json";
+import { Link } from "react-router-dom";
+
 console.log(projects);
 function Projects() {
   return (
@@ -16,7 +18,7 @@ function Projects() {
             >
               <img
                 className="w-[400px] h-[300px]"
-                src={`ProjectFotos/${project.img}`}
+                src={`ProjectThumbnails/${project.img}`}
                 alt=""
               />
               <div className=" w-[422px] flex flex-col ">
@@ -29,7 +31,9 @@ function Projects() {
                 </span>
                 <br />
                 <button className="bg-n_green w-[100%] py-3 text-center rounded-lg flex items-center justify-center  ">
-                  See details
+                  <Link to="/Project" state={{ project }}>
+                    See Details
+                  </Link>
                   <img src=" Logos\arrow_forward_ios.png" alt="" />
                 </button>
               </div>

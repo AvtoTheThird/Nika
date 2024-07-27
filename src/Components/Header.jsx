@@ -1,10 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header class="flex justify-between items-center px-16 h-[112px] bg-n_black text-n_white  border-b-2 border-n_hr">
       <div class="flex-shrink-0">
-        <img className="w-32" src=" Logos\NP.png" alt="" />{" "}
+        <Link to="/">
+          {" "}
+          <img className="w-32" src=" Logos\NP.png" alt="" />{" "}
+        </Link>
       </div>
       <nav class="flex-1 flex justify-center space-x-4 gap-5">
         <a href="#home" class="text-lg">

@@ -2,7 +2,14 @@
   {
     "name": "Online Store For Buisiness",
     "description": "Multi-Page fully responsive Full-Stack project with admin panel for managing content built on Next.js and TailwindCSS, hosted on google firebase platform. ",
-    "img": "1.png"
+    "img": "1.png",
+    "imgs": ["1.png", "1-design.png"],
+    "bulletpoints": [
+      "Guest List: View the complete list of guests with detailed information about each one.",
+      "Income Tracking: Easily track income by category.",
+      "Guest Activity: Monitor guest activity by month, week, or day.",
+      "Statistics: Get insights into the number of free rooms, reservations, and total guests."
+    ]
   },
   {
     "name": "Online Store For Buisiness",
