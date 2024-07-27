@@ -8,6 +8,7 @@ export default {
       n_white: "#E0E0E0",
       n_grey: "#B0B0B0",
       n_dark_grey: "#3A3A3A",
+      n_hr: "#2B2B2C",
     },
     extend: {},
   },

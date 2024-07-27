@@ -4,10 +4,11 @@ import Header from "./Components/Header";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <div className="h-[2000px] ">
+    <div className="">
       <Header />
       <Home />
       <div className="flex bg-n_black justify-center  pb-5">
@@ -23,6 +24,7 @@ function App() {
         </div>
       </div>
       <Projects />
+      <Footer />
     </div>
   );
 }

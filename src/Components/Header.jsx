@@ -2,7 +2,7 @@ import React from "react";
 
 function Header() {
   return (
-    <header class="flex justify-between items-center px-16 h-[112px] bg-n_black text-n_white border-b border-n_grey">
+    <header class="flex justify-between items-center px-16 h-[112px] bg-n_black text-n_white  border-b-2 border-n_hr">
       <div class="flex-shrink-0">
         <img className="w-32" src="public\Logos\NP.png" alt="" />{" "}
       </div>
