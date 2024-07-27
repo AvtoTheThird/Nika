@@ -31,7 +31,7 @@ function Projects() {
                 </span>
                 <br />
                 <button className="bg-n_green w-[100%] py-3 text-center rounded-lg flex items-center justify-center  ">
-                  <Link to="/Project" state={{ project }}>
+                  <Link to="/Nika/Project" state={{ project }}>
                     See Details
                   </Link>
                   <img src=" Logos\arrow_forward_ios.png" alt="" />

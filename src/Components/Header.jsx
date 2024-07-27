@@ -5,9 +5,9 @@ function Header() {
   return (
     <header class="flex justify-between items-center px-16 h-[112px] bg-n_black text-n_white  border-b-2 border-n_hr">
       <div class="flex-shrink-0">
-        <Link to="/">
+        <Link to="/Nika/">
           {" "}
-          <img className="w-32" src=" Logos\NP.png" alt="" />{" "}
+          <img className="w-32" src="Logos\NP.png" alt="NP" />{" "}
         </Link>
       </div>
       <nav class="flex-1 flex justify-center space-x-4 gap-5">
