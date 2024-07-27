@@ -4,7 +4,7 @@ function Header() {
   return (
     <header class="flex justify-between items-center px-16 h-[112px] bg-n_black text-n_white  border-b-2 border-n_hr">
       <div class="flex-shrink-0">
-        <img className="w-32" src="public\Logos\NP.png" alt="" />{" "}
+        <img className="w-32" src=" Logos\NP.png" alt="" />{" "}
       </div>
       <nav class="flex-1 flex justify-center space-x-4 gap-5">
         <a href="#home" class="text-lg">
@@ -22,10 +22,10 @@ function Header() {
       </nav>
       <div class="flex-shrink-0 flex space-x-4">
         <a href="#Linkedin">
-          <img src="public\Logos\LI-Default.png" alt="" />
+          <img src=" Logos\LI-Default.png" alt="" />
         </a>
         <a href="#Dribble" class="text-lg">
-          <img src="public\Logos\Dr-Default.png" alt="" />{" "}
+          <img src=" Logos\Dr-Default.png" alt="" />{" "}
         </a>
         <button className="bg-n_green rounded-lg px-4 py-3 text-n_black font-semibold">
           contact me

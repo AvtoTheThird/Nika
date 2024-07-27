@@ -30,7 +30,7 @@ function Projects() {
                 <br />
                 <button className="bg-n_green w-[100%] py-3 text-center rounded-lg flex items-center justify-center  ">
                   See details
-                  <img src="public\Logos\arrow_forward_ios.png" alt="" />
+                  <img src=" Logos\arrow_forward_ios.png" alt="" />
                 </button>
               </div>
             </div>
