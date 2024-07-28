@@ -32,7 +32,7 @@ function Home() {
               <br />
 
               <u>
-                <a href="mailto:nikapataridze15@gmail.com">
+                <a id="About" href="mailto:nikapataridze15@gmail.com">
                   nikapataridze15@gmail.com
                 </a>
               </u>

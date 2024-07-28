@@ -8,9 +8,11 @@ import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="">
+    <div className="" id="home">
       <Header />
-      <Home />
+      <div>
+        <Home />
+      </div>
       <div className="flex bg-n_black justify-center  pb-5">
         <div className="flex justify-between  items-center w-[1060px]">
           <span className="text-n_white text-3xl font-bold">About me</span>
@@ -18,7 +20,7 @@ function App() {
       </div>
 
       <About />
-      <div className="flex bg-n_black justify-center  pb-5">
+      <div id="Projects" className="flex bg-n_black justify-center  pb-5">
         <div className="flex justify-between  items-center w-[1060px]">
           <span className="text-n_white text-3xl font-bold">My Projects</span>
         </div>
