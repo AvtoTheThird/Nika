@@ -8,8 +8,8 @@ function Contact() {
     <>
       <Header />
       <div className="flex bg-n_black justify-center py-10 font-['Helvetica']">
-        <div className=" flex justify-between gap-10 items-center w-[1060px] h-[68vh] bg-n_black">
-          <div className="w-[400px] flex flex-col gap-3">
+        <div className=" lg:flex justify-between gap-10 items-center lg:w-[1060px] lg:h-[68vh] bg-n_black">
+          <div className="lg:w-[400px] w-[95vw] flex flex-col gap-3">
             <span className="text-3xl font-bold  text-n_white">Contact Me</span>
             <span className="text-lg   text-n_grey leading-normal">
               Feel free to reach out if you have any questions, opportunities,
@@ -26,17 +26,28 @@ function Contact() {
             <span className="text-xl font-bold  text-n_white">
               Follow me on
             </span>{" "}
-            <div className="flex gap-4">
-              <img
-                className="w-[40px] h-[40px]"
-                src="Logos/Dr-Default.png"
-                alt=""
-              />
-              <img
-                className="w-[40px] h-[40px]"
-                src="Logos/Dr-Default.png"
-                alt=""
-              />
+            <div className="flex gap-4 pb-5">
+              <a
+                href="https://www.linkedin.com/in/nikoloz-pataridze-043a2a237/"
+                target="_blank"
+              >
+                <img
+                  src=" Logos\LI-Default.png"
+                  className="hover:opacity-75 lg:block "
+                  alt=""
+                />
+              </a>
+              <a
+                href="https://dribbble.com/BaLErion21"
+                class="text-lg"
+                target="_blank"
+              >
+                <img
+                  className="hover:opacity-75 lg:block "
+                  src=" Logos\Dr-Default.png"
+                  alt=""
+                />{" "}
+              </a>
             </div>
           </div>
           <div>

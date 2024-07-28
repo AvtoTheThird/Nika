@@ -20,8 +20,15 @@ function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isMenuOpen]);
   return (
-    <header class="flex justify-between items-center px-8 lg:px-16 h-[112px] bg-n_black text-n_white  border-b-2 border-n_hr sticky  z-50 top-0 ">
+    <header class="flex justify-between items-center px-8 lg:px-16 h-[112px] bg-n_black text-n_white z-50 border-b-2 border-n_hr sticky   top-0 ">
       <div class="flex-shrink-0 ">
         <Link to="/Nika/">
           <img className="w-24 lg:w-32" src="Logos\NP.png" alt="NP" />{" "}
@@ -111,73 +118,87 @@ function Header() {
         </button>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden bg-n_black  fixed inset-0 bg-white z-10 flex flex-col items-center justify-center">
-          <nav className="px-2 pt-2 pb-4 space-y-1 flex flex-col gap-3 items-center justify-center">
-            <SLink
-              to="home"
-              class="block text-lg cursor-pointer "
-              smooth={true}
-              duration={500}
+        <>
+          <div className="flex z-20 w-full justify-between fixed inset-0 px-8 pt-6 h-[50px]">
+            <Link to="/Nika/">
+              <img className="w-24 lg:w-32" src="Logos\NP.png" alt="NP" />{" "}
+            </Link>{" "}
+            <img
+              src="Logos\x.png"
+              className="w-[35px] h-[30px] z-20"
+              alt=""
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              Home
-            </SLink>
-            <SLink
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              to="About"
-              smooth={true}
-              duration={500}
-              class="block text-lg cursor-pointer "
-            >
-              About
-            </SLink>
-            <SLink
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              to="Projects"
-              smooth={true}
-              duration={500}
-              class="block text-lg cursor-pointer"
-            >
-              Projects
-            </SLink>
-            <a
-              href="/Nika/Resume.pdf"
-              className="block text-lg cursor-pointer"
-              target="_blank"
-            >
-              Resume
-            </a>
-            <Link
-              to="/Nika/Contact"
-              className="bg-n_green rounded-lg px-10 py-3 text-n_black font-semibold"
-            >
-              contact me
-            </Link>
-            <div class="flex-shrink-0 flex  space-x-4  ">
+            />{" "}
+          </div>
+
+          <div className="md:hidden bg-n_black  fixed inset-0  z-10 flex flex-col items-center justify-center">
+            <nav className="px-2 pt-2 pb-4 space-y-1 flex flex-col gap-3 items-center justify-center">
+              <SLink
+                to="home"
+                class="block text-lg cursor-pointer "
+                smooth={true}
+                duration={500}
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+              >
+                Home
+              </SLink>
+              <SLink
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                to="About"
+                smooth={true}
+                duration={500}
+                class="block text-lg cursor-pointer "
+              >
+                About
+              </SLink>
+              <SLink
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                to="Projects"
+                smooth={true}
+                duration={500}
+                class="block text-lg cursor-pointer"
+              >
+                Projects
+              </SLink>
               <a
-                href="https://www.linkedin.com/in/nikoloz-pataridze-043a2a237/"
+                href="/Nika/Resume.pdf"
+                className="block text-lg cursor-pointer"
                 target="_blank"
               >
-                <img
-                  src=" Logos\LI-Default.png"
-                  className="hover:opacity-75 lg:block "
-                  alt=""
-                />
+                Resume
               </a>
-              <a
-                href="https://dribbble.com/BaLErion21"
-                class="text-lg"
-                target="_blank"
+              <Link
+                to="/Nika/Contact"
+                className="bg-n_green rounded-lg px-10 py-3 text-n_black font-semibold"
               >
-                <img
-                  className="hover:opacity-75 lg:block "
-                  src=" Logos\Dr-Default.png"
-                  alt=""
-                />{" "}
-              </a>
-            </div>
-          </nav>
-        </div>
+                contact me
+              </Link>
+              <div class="flex-shrink-0 flex  space-x-4  ">
+                <a
+                  href="https://www.linkedin.com/in/nikoloz-pataridze-043a2a237/"
+                  target="_blank"
+                >
+                  <img
+                    src=" Logos\LI-Default.png"
+                    className="hover:opacity-75 lg:block "
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="https://dribbble.com/BaLErion21"
+                  class="text-lg"
+                  target="_blank"
+                >
+                  <img
+                    className="hover:opacity-75 lg:block "
+                    src=" Logos\Dr-Default.png"
+                    alt=""
+                  />{" "}
+                </a>
+              </div>
+            </nav>
+          </div>
+        </>
       )}
     </header>
   );

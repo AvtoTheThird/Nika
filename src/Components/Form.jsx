@@ -8,12 +8,12 @@ function ContactForm() {
   }
   return (
     <form className="text-n_grey flex flex-col gap-8" onSubmit={handleSubmit}>
-      <div className="flex gap-4 ">
+      <div className="flex gap-4 justify-between ">
         <div className="flex flex-col">
           <label htmlFor="FirstName">First Name (Required)</label>
           <input
             required="required"
-            className="w-[250px] h-[40px] bg-n_input_bg border-[1px] border-n_input-border rounded-md"
+            className="lg:w-[250px] h-[40px]  bg-n_input_bg border-[1px] border-n_input-border rounded-md"
             id="FirstName"
             type="text"
             name="FirstName"
@@ -28,7 +28,7 @@ function ContactForm() {
           <label htmlFor="LastName">Last Name (Required)</label>
           <input
             required="required"
-            className="w-[250px] h-[40px] bg-n_input_bg border-[1px] border-n_input-border rounded-md"
+            className="lg:w-[250px] h-[40px] bg-n_input_bg border-[1px] border-n_input-border rounded-md"
             id="LastName"
             type="text"
             name="LastName"
@@ -46,7 +46,7 @@ function ContactForm() {
         <label htmlFor="email">Email Address (Required)</label>
         <input
           required="required"
-          className="w-[500px] h-[40px] bg-n_input_bg border-[1px] border-n_input-border rounded-md"
+          className="lg:w-[500px] w-[95vw] h-[40px] bg-n_input_bg border-[1px] border-n_input-border rounded-md"
           id="email"
           type="email"
           name="email"
@@ -57,7 +57,7 @@ function ContactForm() {
         <label htmlFor="Subject"> Subject (Required)</label>
         <input
           required="required"
-          className="w-[500px] h-[40px] bg-n_input_bg border-[1px] border-n_input-border rounded-md"
+          className="lg:w-[500px] w-[95vw] h-[40px] bg-n_input_bg border-[1px] border-n_input-border rounded-md"
           id="Subject"
           type="text"
           name="Subject"
@@ -73,7 +73,7 @@ function ContactForm() {
         <label htmlFor="message">Message (Required)</label>
         <textarea
           required="required"
-          className="w-[500px] h-[150px] bg-n_input_bg border-[1px] border-n_input-border rounded-md"
+          className="lg:w-[500px] w-[95vw] h-[150px] bg-n_input_bg border-[1px] border-n_input-border rounded-md"
           id="message"
           name="message"
         />

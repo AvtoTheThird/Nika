@@ -13,7 +13,7 @@ function App() {
       <div>
         <Home />
       </div>
-      <div className="flex bg-n_black justify-center  pb-5 lg:scale-100 scale-105">
+      <div className="flex bg-n_black justify-center  pb-5 lg:scale-100 scale-y-105">
         <div className="flex justify-between  items-center w-[90vw] lg:w-[1060px]">
           <span className="text-n_white text-3xl font-bold">About me</span>
         </div>
@@ -22,7 +22,7 @@ function App() {
       <About />
       <div
         id="Projects"
-        className="flex bg-n_black justify-center lg:scale-100 scale-105  pb-5"
+        className="flex bg-n_black justify-center lg:scale-100 scale-y-105 z-0 pb-5"
       >
         <div className="flex justify-between  items-center w-[90vw] lg:w-[1060px]">
           <span className="text-n_white text-3xl font-bold">My Projects</span>
