@@ -12,16 +12,16 @@ function Projects() {
             <div
               className={
                 index + 1 === projects.length
-                  ? "flex justify-between w-[1060px] "
-                  : "flex justify-between w-[1060px] border-b-2 border-n_hr py-8"
+                  ? "flex lg:flex-row flex-col justify-between    lg:w-[1060px] "
+                  : "flex lg:flex-row flex-col justify-between   lg:w-[1060px] border-b-2 border-n_hr py-8"
               }
             >
               <img
-                className="w-[400px] h-[300px]"
+                className="lg:w-[400px] w-[95vw] lg:h-[300px]"
                 src={`ProjectThumbnails/${project.img}`}
                 alt=""
               />
-              <div className=" w-[422px] flex flex-col ">
+              <div className=" lg:w-[422px] w-[95vw] flex flex-col ">
                 <span className="text-n_white text-xl font-bold">
                   {project.name}
                 </span>
